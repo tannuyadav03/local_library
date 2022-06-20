@@ -25,7 +25,7 @@ SECRET_KEY = 'l*!!yqb@y*x7&**uudz6gj!m%o9yack)*$b_wi!q+p(90n5_g!'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [] 
 
 
 # Application definition
@@ -41,6 +41,7 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
+    #'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -124,4 +125,4 @@ STATIC_URL = '/static/'
 LOGIN_REDIRECT_URL = '/'
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
